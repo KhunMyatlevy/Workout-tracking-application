@@ -7,6 +7,4 @@ urlpatterns = [
     path('workout-sessions/', views.view_workout_sessions, name='view_workout_sessions'),
     path('workout-sessions/<int:session_id>/', views.view_workout_details, name='view_workout_details'),
 
-
-
 ]
