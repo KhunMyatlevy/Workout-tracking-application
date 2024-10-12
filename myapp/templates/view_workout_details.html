@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Session Details</title>
+    <link rel="stylesheet" href="{% static 'myapp/css/styles.css' %}">
+</head>
+<body>
+    <div class="session">
+    <h2>Workout Session on {{ workout_session.date }}</h2>
+
+    <!-- Check if there are workout details -->
+    {% if workout_details %}
+        <ul>
+            <!-- Loop through the workout details and display each one -->
+            {% for detail in workout_details %}
+                <li>
+                    <strong>{{ detail.exercise_name }}</strong>: 
+                    {{ detail.sets }} sets of {{ detail.reps }} reps at {{ detail.weight }}kg
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No exercises have been added for this session.</p>
+    {% endif %}
+
+    <!-- Link to go back to the list of workout sessions -->
+    <a href="{% url 'view_workout_sessions' %}">Back to Workout Sessions</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Workout Session</title>
+    <link rel="stylesheet" href="{% static 'myapp/css/styles.css' %}">
+
+</head>
+<body>
+    <div class = "workout_session">
+    <h2>Create Workout Session</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ session_form.as_p }}
+        <button type="submit">Create Workout Session</button>
+    </form>
+    </div>
+</body>
+</html>

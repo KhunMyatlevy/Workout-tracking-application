@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Workout Details</title>
+    <link rel="stylesheet" href="{% static 'myapp/css/styles.css' %}">
+
+</head>
+<body>
+    <div class = "workout_details">
+    <h2>Add Workout Details for Session on {{ workout_session.date }}</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ detail_form.as_p }}
+        <button type="submit">Add Workout Detail</button>
+    </form>
+    </div>
+
+    <div class = "existing_details">
+    <h3>Existing Details for This Session:</h3>
+    <ul>
+        {% for detail in workout_session.workout_details.all %}
+            <li>{{ detail.exercise_name }}: {{ detail.sets }} sets of {{ detail.reps }} reps at {{ detail.weight }}kg</li>
+        {% endfor %}
+    </ul>
+    
+    <a href="{% url 'create_workout_session' %}">Create a New Workout Session</a>
+    </div>
+
+</body>
+</html>

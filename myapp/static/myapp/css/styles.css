@@ -1,0 +1,219 @@
+body {
+    padding: 100px;
+    background-color: #edeef2;
+    color: black;
+
+}
+
+.workout_session {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-style:normal;
+
+}
+
+.workout_session input {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.workout_session h2 {
+    padding: 20px;
+    background-color:#4d5beb;
+    border-radius: 20px;
+}
+
+.workout_session form {
+    padding: 20px;
+    background-color: #4d5beb;
+    border-radius: 20px;
+}
+
+.workout_session p  {
+    padding: 20px;
+    background-color: #edeef2;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.workout_session button {
+    padding: 20px;
+    background-color: #edeef2;
+    border-radius: 20px;
+}
+
+.workout_details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color:#4d5beb;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.workout_details select {
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.workout_details input {
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.workout_details h2 {
+    padding: 20px;
+    background-color:#edeef2;
+    border-radius: 20px;
+
+}
+
+.workout_details p {
+    padding: 20px;
+    background-color:#edeef2;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+
+.workout_details button{
+    padding: 20px;
+    background-color:#edeef2;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+
+.existing_details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4d5beb; 
+}
+
+.existing_details h3{
+    padding: 20px;
+    background-color:#edeef2;
+    border-radius: 20px;
+    margin-left: -70px;    
+
+}
+
+.existing_details ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0;       /* Optional: remove left padding */
+}
+
+
+.existing_details li{
+    padding: 10px;
+    background-color:#edeef2;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: -110px;    
+
+}
+
+.existing_details a {
+    text-decoration: none;
+    padding: 20px;
+    background-color: #edeef2;
+    color:black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: -120px;       /* Move the list items 20px to the left */
+
+    
+}
+
+.workout_sessions_view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #4d5beb;
+
+
+}
+
+.workout_sessions_view h2 {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #edeef2;
+}
+
+.workout_sessions_view ul {
+    list-style-type: none; /* Remove bullet points */
+}
+
+.workout_sessions_view li{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #edeef2;
+    margin-bottom: 10px;
+    margin-left: -50px;
+
+}
+
+.workout_sessions_view a {
+    text-decoration: none;
+    color: black;
+}
+
+.create {
+    display: flex;
+    flex-direction: column;
+}
+
+.create {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #edeef2;
+    margin-left: -30px;
+
+}
+
+.session {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #4d5beb;
+    border-radius: 20px;
+
+}
+
+.session h2{
+    padding: 20px;
+    background-color:#edeef2;
+    border-radius: 20px;
+
+}
+
+.session ul {
+    list-style-type: none; /* Remove bullet points */
+    
+}
+
+.session li {
+    padding: 10px;
+    border-radius: 10px;
+    background-color:#edeef2;
+    margin-bottom: 10px;
+    margin-left: -40px;
+    
+}
+
+.session a {
+    padding: 10px;
+    border-radius: 10px;
+    background-color:#edeef2;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    
+}
